@@ -56,6 +56,9 @@ def parse_args():
     parser.add_argument('--pooling', type=str, default='mean', help='VNN only: pooling method [default: mean]',
                         choices=['mean', 'max'])
     parser.add_argument('--n_knn', default=40, type=int, help='Number of nearest neighbors to use, not applicable to PointNet [default: 20]')
+    
+    parser.add_argument('--resume', action='store_true', help='resume training from checkpoint')
+    
     return parser.parse_args()
 
 def main(args):
