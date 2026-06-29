@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vector Neurons: A General Framework for SO(3)-Equivariant Networks
 
 Created by <a href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="http://ivg.au.tsinghua.edu.cn/people/Yueqi_Duan/" target="_blank">Yueqi Duan</a>, <a href="https://scholar.google.com/citations?user=zsGbyGYAAAAJ&hl=fr" target="_blank">Adrien Poulenard</a>, <a href="https://taiya.github.io/" target="_blank">Andrea Tagliasacchi</a>, and <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas Guibas</a>.
@@ -85,3 +86,6 @@ MIT License
 
 ## Acknowledgement
 The structure of this codebase is borrowed from this pytorch implementataion of [PointNet/PointNet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch) and [DGCNN](https://github.com/WangYueFt/dgcnn) as well as [this implementation](https://github.com/AnTao97/dgcnn.pytorch).
+=======
+# dataset_ShapeNet
+>>>>>>> 7b17c044f6c3cb205b85156be48c20460bc201b0
