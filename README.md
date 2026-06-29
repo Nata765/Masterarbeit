@@ -14,29 +14,6 @@ rm shapenetcore_partanno_segmentation_benchmark_v0_normal.tar
 ```
 ## Usage
 
-### Classification on ModelNet40
-Training
-```
-python train_cls.py --model vn_pointnet_cls --rot ROTATION --log_dir LOG_DIR
-```
-```
-python train_cls.py --model vn_dgcnn_cls --rot ROTATION --log_dir LOG_DIR
-```
-Evaluation
-```
-python test_cls.py --model vn_pointnet_cls --rot ROTATION --log_dir LOG_DIR
-```
-```
-python test_cls.py --model vn_dgcnn_cls --rot ROTATION --log_dir LOG_DIR
-```
-Here `ROTATION` should be chosen from `aligned`, `z`, `so3`. For instance, to train a VN-DGCNN on aligned shapes and test it on SO(3)-rotated shapes, run
-```
-python train_cls.py --model vn_dgcnn_cls --rot aligned --log_dir vn_dgcnn/aligned/
-```
-```
-python test_cls.py --model vn_dgcnn_cls --rot so3 --log_dir vn_dgcnn/aligned/
-```
-
 ### Part Segmentation on ShapeNet
 
 Training
