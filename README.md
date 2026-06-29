@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Vector Neurons: A General Framework for SO(3)-Equivariant Networks
+# Masterarbeit-code
 
 Created by <a href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="http://ivg.au.tsinghua.edu.cn/people/Yueqi_Duan/" target="_blank">Yueqi Duan</a>, <a href="https://scholar.google.com/citations?user=zsGbyGYAAAAJ&hl=fr" target="_blank">Adrien Poulenard</a>, <a href="https://taiya.github.io/" target="_blank">Andrea Tagliasacchi</a>, and <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas Guibas</a>.
 
@@ -18,10 +18,15 @@ We introduce a general framework built on top of what we call Vector Neurons for
 <img src='images/vn_teaser.PNG' width=300> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='images/vector_neurons.PNG' width=350>
 
 ## Data Preparation
++ Part Segmentation: Download [ShapeNet] and save in `data/shapenetcore_partanno_segmentation_benchmark_v0_normal/`.
+```
+mkdir data
+cd data
 
-+ Classification: Download [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save in `data/modelnet40_normal_resampled/`.
-+ Part Segmentation: Download [ShapeNet](https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip)  and save in `data/shapenetcore_partanno_segmentation_benchmark_v0_normal/`.
-
+gdown https://drive.google.com/uc?id=1W3SEE-dY1sxvlECcOwWSDYemwHEUbJIS
+tar -xvf shapenetcore_partanno_segmentation_benchmark_v0_normal.tar
+rm shapenetcore_partanno_segmentation_benchmark_v0_normal.tar
+```
 ## Usage
 
 ### Classification on ModelNet40
