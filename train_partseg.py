@@ -57,7 +57,7 @@ def parse_args():
                         choices=['mean', 'max'])
     parser.add_argument('--n_knn', default=40, type=int, help='Number of nearest neighbors to use, not applicable to PointNet [default: 20]')
     
-    parser.add_argument('--resume', action='store_true', help='resume training from checkpoint')
+    parser.add_argument('--resume', action='store_true', help='Resume training from checkpoints/best_model.pth')
     
     return parser.parse_args()
 
@@ -148,6 +148,27 @@ def main(args):
             momentum=0.9,
             weight_decay=args.decay_rate
         )
+        # ================= Resume =================
+    start_epoch = 0
+    
+    if args.resume:
+        checkpoint_path = str(checkpoints_dir) + '/best_model.pth'
+    
+        if os.path.exists(checkpoint_path):
+            print(f'Loading checkpoint: {checkpoint_path}')
+    
+            checkpoint = torch.load(checkpoint_path)
+    
+            classifier.load_state_dict(checkpoint['model_state_dict'])
+            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    
+            start_epoch = checkpoint['epoch'] + 1
+            best_inctance_avg_iou = checkpoint['inctance_avg_iou']
+    
+            print(f'Resume from epoch {start_epoch}')
+        else:
+            print('Checkpoint not found, training from scratch.')
+# ==========================================
 
     def bn_momentum_adjust(m, momentum):
         if isinstance(m, torch.nn.BatchNorm2d) or isinstance(m, torch.nn.BatchNorm1d):
