@@ -48,11 +48,4 @@ Please cite this paper if you want to use it in your work,
       year={2021}
     } 
 
-## License
-MIT License
 
-## Acknowledgement
-The structure of this codebase is borrowed from this pytorch implementataion of [PointNet/PointNet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch) and [DGCNN](https://github.com/WangYueFt/dgcnn) as well as [this implementation](https://github.com/AnTao97/dgcnn.pytorch).
-=======
-# dataset_ShapeNet
->>>>>>> 7b17c044f6c3cb205b85156be48c20460bc201b0
