@@ -1,21 +1,6 @@
 <<<<<<< HEAD
 # Masterarbeit-code
-
-Created by <a href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="http://ivg.au.tsinghua.edu.cn/people/Yueqi_Duan/" target="_blank">Yueqi Duan</a>, <a href="https://scholar.google.com/citations?user=zsGbyGYAAAAJ&hl=fr" target="_blank">Adrien Poulenard</a>, <a href="https://taiya.github.io/" target="_blank">Andrea Tagliasacchi</a>, and <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas Guibas</a>.
-
-We introduce a general framework built on top of what we call Vector Neurons for creating SO(3) equivariant neural networks. Extending neurons from single scalars to 3D vectors, our vector neurons transport SO(3) actions to latent spaces and provide a framework for building equivariance in common neural operations including linear layers, non-linearities, pooling, and normalization.
-
-**[Paper](https://arxiv.org/pdf/2104.12229.pdf) | [Project](https://cs.stanford.edu/~congyue/vnn/) | [Short Video](https://www.youtube.com/watch?v=aJy4eMvdTpA&t=4s)**
-
-### :u6709: Other Implementations
-
-+ **[[Neural Implicit Reconstruction]](https://github.com/FlyingGiraffe/vnn-neural-implicits/)** Neural implicit reconstruction experiments in the paper.
-+ **[[Pointcloud Networks]](https://github.com/FlyingGiraffe/vnn-pc/)** Separate training setups for VN-PointNet and VN-DGCNN.
-
-## Overview
-`vnn` is the author's implementation of Vector Neuron Networks with PointNet and DGCNN backbones. The current version only supports input data without normals.
-
-<img src='images/vn_teaser.PNG' width=300> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='images/vector_neurons.PNG' width=350>
+## First try with VN-DGCNN
 
 ## Data Preparation
 + Part Segmentation: Download [ShapeNet] and save in `data/shapenetcore_partanno_segmentation_benchmark_v0_normal/`.
